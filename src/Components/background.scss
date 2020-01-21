@@ -1,0 +1,138 @@
+$randomNumber: random(400);
+$time:15s;
+.size{
+background-color: rgb(226, 106, 106);
+   
+    margin:50px auto;
+    width: 90%;
+    height:  700px;
+    border: solid black 2px;
+    overflow: hidden;
+    position: relative;
+}
+ul{
+  position: relative;
+ 
+  width: 90vw;
+  margin: 0;
+  padding: 0;
+  height: 700px;
+  overflow: hidden;
+}
+li {
+  position: absolute;
+  list-style: none;
+}
+.iconheart{
+font-size: 20em;
+}
+
+
+
+
+
+
+
+
+.color1{
+  
+  color:rgb(239 ,87 ,141);
+  filter:drop-shadow(0 0 10px red);
+}
+.color2{
+  color:rgb(231, 153, 153);
+  filter:drop-shadow(0 0 10px rgb(255, 133, 133));
+}
+.color3{
+    color:rgb(197, 164, 164);
+  filter:drop-shadow(0 0 10px rgb(255, 144, 144));
+}
+.color4{
+  color:rgb(194, 94, 94);
+  filter:drop-shadow(0 0 10px rgb(255, 74, 74));
+}
+.color5{
+  color:rgb(182, 110, 110);
+  filter:drop-shadow(0 0 10px rgb(255, 90, 90));
+}
+.color6{
+  color:rgb(250, 90, 90);
+  filter:drop-shadow(0 0 10px rgb(255, 70, 70));
+}
+
+
+
+.moveX{
+  animation: translateX infinite $time alternate;  
+}
+.moveXOpposite{
+  animation: translateX infinite $time alternate-reverse;
+}
+.moveY{
+  animation: translateY infinite $time alternate;
+}
+.moveYOpposite{
+  animation: translateY infinite $time alternate-reverse;
+}
+.moveXY{
+  animation: translateXY infinite $time alternate;
+}
+.moveXYopposite{
+  animation: translateXY infinite $time  alternate-reverse;
+}
+.listX{
+  position: absolute;
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+.listY{
+  position: absolute;
+  margin-top: 0;
+}
+.listXY{
+  position: absolute;
+  margin-top: 0;
+}
+.listY{
+  position: absolute;
+  margin-left: 90%;
+}
+.heartX{
+  background-color: transparent ;
+    width: 200px;
+    height:200px;
+}
+
+@keyframes translateX {
+    from {
+      transform: translateX(-200px);
+    }
+    to {
+     
+      transform: translateX(0);
+    }
+  }
+  @keyframes translateY {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+  @keyframes translateXY {
+  from {
+    transform: translate(-200px,-200px);
+  }
+  to {
+    transform: translate(0,0);
+  }
+}
